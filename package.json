@@ -1,0 +1,29 @@
+{
+  "name": "rust-server-cfg-language-support",
+  "displayName": "Rust Server CFG Language Support",
+  "description": "VS Code language support for Rust dedicated server CFG files.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.118.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOUR_USERNAME/vscode-rust-server-cfg.git"
+  },
+  "contributes": {
+    "languages": [{
+      "id": "rust-server-cfg",
+      "aliases": ["Rust Server CFG", "rust-server-cfg"],
+      "extensions": [".cfg"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "rust-server-cfg",
+      "scopeName": "source.rust-server-cfg",
+      "path": "./syntaxes/rust-server-cfg.tmLanguage.json"
+    }]
+  }
+}
